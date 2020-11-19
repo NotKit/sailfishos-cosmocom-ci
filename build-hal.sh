@@ -1,6 +1,9 @@
 #!/bin/bash
 source hadk.env
 cd $ANDROID_ROOT
+
+./hybris-patches/apply-patches.sh --mb
+
 source build/envsetup.sh 2>&1
 breakfast $DEVICE
 

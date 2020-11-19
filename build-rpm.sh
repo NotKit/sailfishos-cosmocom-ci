@@ -3,7 +3,7 @@
 set -x
 
 source /home/nemo/work/ci/ci/hadk.env
-export ANDROID_ROOT=/home/nemo/work/hadk_14.1
+export ANDROID_ROOT=/home/nemo/work/hadk_16.0
 
 sudo chown -R nemo:nemo $ANDROID_ROOT
 cd $ANDROID_ROOT
@@ -36,4 +36,4 @@ rpm/dhd/helpers/build_packages.sh --build=hybris/mw/droidmedia-localbuild
 
 rpm/dhd/helpers/build_packages.sh --droid-hal
 
-cat /home/nemo/work/hadk_14.1/droid-hal-$DEVICE.log
+cat /home/nemo/work/hadk_16.0/droid-hal-$DEVICE.log
